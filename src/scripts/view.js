@@ -15,7 +15,7 @@ view.albums = {
 
 	title: function() {
 
-		lychee.setTitle('Albums', false)
+		lychee.setTitle('Mariage 26 mai 2017', false)
 
 	},
 
