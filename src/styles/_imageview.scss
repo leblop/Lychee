@@ -37,6 +37,11 @@
 		animation-duration: .3s;
 		animation-timing-function: $timingBounce;
 
+
+			background:#FFFFFF;
+			padding:20px;
+			border:2px solid #000;
+
 		@media (max-width: 640px) {
 			top: 60px;
 			right: 20px;
@@ -44,11 +49,10 @@
 			left: 20px;
 			max-width: calc(100% - 40px);
 			max-height: calc(100% - 80px);
+			padding:10px;
+			border:1px solid #000;
 		}
 
-		background:#FFFFFF;
-		padding:20px;
-		border:2px solid #000;
 	}
 
 	&.full #image {

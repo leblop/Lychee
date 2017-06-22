@@ -74,7 +74,15 @@ lychee.init = function() {
 		}
 
 		$(window).bind('popstate', lychee.load)
-		lychee.load()
+		if ( document.location.hash || ! lychee.publicMode ) {
+			lychee.load()
+		} else {
+			$('#first').html("<img src='first.jpg' draggable='false'>")
+			setTimeout(function() {
+				$('#first').hide()
+				lychee.load()
+			}, 3000);
+		}
 
 	})
 

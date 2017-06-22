@@ -57,7 +57,7 @@ view.albums = {
 				lychee.content.html('')
 				$('body').append(build.no_content('eye'))
 			} else {
-				lychee.content.html(smartData + albumsData)
+					lychee.content.html(smartData + albumsData)
 			}
 
 			// Restore scroll position
