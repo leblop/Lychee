@@ -71,7 +71,7 @@ final class Album {
 		if (isset($data['downloadable'])) $album['downloadable'] = $data['downloadable'];
 
 		// Parse date
-		$album['sysdate'] = strftime('%B %Y', $data['sysstamp']);
+		$album['sysdate'] = strftime('%d %B %Y', $data['sysstamp']);
 
 		// Parse password
 		$album['password'] = ($data['password']=='' ? '0' : '1');

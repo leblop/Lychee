@@ -19,6 +19,22 @@
 		cursor: none;
 	}
 
+	#description {
+		display: block;
+		position: absolute;
+		bottom: 0px;
+
+		background-color: #FFF;
+		margin: auto;
+		width: auto;
+
+		right: 40%;
+		left: 40%;
+		padding: 4px;
+		border:1px solid #000;
+		text-align: center;
+	}
+
 	// ImageView -------------------------------------------------------------- //
 	#image {
 		position: absolute;
@@ -37,10 +53,9 @@
 		animation-duration: .3s;
 		animation-timing-function: $timingBounce;
 
-
-			background:#FFFFFF;
-			padding:20px;
-			border:2px solid #000;
+		background:#000;
+		padding:2px;
+		border:20px solid #FFF;
 
 		@media (max-width: 640px) {
 			top: 60px;
@@ -49,17 +64,18 @@
 			left: 20px;
 			max-width: calc(100% - 40px);
 			max-height: calc(100% - 80px);
-			padding:10px;
-			border:1px solid #000;
+			padding:1px;
+			border:8px solid #FFF;
 		}
 
 	}
 
+
 	&.full #image {
-		top: 0px;
-		right: 0px;
-		bottom: 0px;
-		left: 0px;
+		top: 20px;
+		right: 20px;
+		bottom: 30px;
+		left: 20px;
 		max-width: calc(100% - 45px);
 		max-height: calc(100% - 45px);
 	}

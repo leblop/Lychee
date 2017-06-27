@@ -126,6 +126,9 @@ build.imageview = function(data, visibleControls) {
 		html += lychee.html`<img id='image' class='$${ visibleControls===true ? '' : 'full' }' src='$${ data.url }' srcset='$${ data.medium } 1920w, $${ data.url } $${ data.width }w' draggable='false'>`
 
 	}
+	if ( data.description ) {
+		html += lychee.html`<p id="description">$${ data.description }</p>`
+	}
 
 	html += `
 	        <div class='arrow_wrapper arrow_wrapper--previous'><a id='previous'>${ build.iconic('caret-left') }</a></div>

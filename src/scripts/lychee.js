@@ -235,7 +235,7 @@ lychee.getUpdate = function() {
 
 lychee.setTitle = function(title, editable) {
 
-	document.title = lychee.title + ' - ' + title
+	// document.title = lychee.title + ' - ' + title
 
 	header.setEditable(editable)
 	header.setTitle(title)
